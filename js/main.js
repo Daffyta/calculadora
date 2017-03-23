@@ -3,6 +3,7 @@ function mostrarNumero (num) {
     document.formulario.resultado.value = guardarNumero + num;
 }
 
+
 function signoIgual(valor){
   var numeroPresionado = document.getElementById('textoPantalla');
   numeroPresionado.value = eval(numeroPresionado.value);
@@ -16,5 +17,9 @@ function teclaPresionada(event) {
     } else if (codigoASCII < 42 || codigoASCII > 57) {
       return false;
       }
+}
 
+function limpiar (num){
+  var teclaPresionada = document.getElementById('textoPantalla');
+  teclaPresionada.value = "";
 }
