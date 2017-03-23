@@ -7,3 +7,14 @@ function signoIgual(valor){
   var numeroPresionado = document.getElementById('textoPantalla');
   numeroPresionado.value = eval(numeroPresionado.value);
 }
+
+function teclaPresionada(event) {
+  var codigoASCII = event.keyCode;
+    if (codigoASCII == 13){
+      signoIgual();
+      return false;
+    } else if (codigoASCII < 42 || codigoASCII > 57) {
+      return false;
+      }
+
+}
